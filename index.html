@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DayWindow — Schengen 90/180 Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DayWindow</h1>
+    <p class="subtitle">Schengen 90/180 Calculator</p>
+
+    <div id="trips"></div>
+    <button id="addBtn">+ Add Trip</button>
+
+    <div class="results">
+      <div class="card">Used: <b id="used">0</b></div>
+      <div class="card">Remaining: <b id="remaining">90</b></div>
+      <div id="risk" class="card green">Compliant</div>
+      <div class="card">Next Entry: <b id="next">Today</b></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
