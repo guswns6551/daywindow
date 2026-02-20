@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How the Schengen 90/180 Rule Works — DayWindow</title>
+  <meta name="description" content="A simple explanation of the Schengen 90/180 rule with examples, plus how DayWindow calculates your used and remaining days." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <header style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+      <div style="font-weight:700;">DayWindow</div>
+      <nav style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="index.html">Calculator</a>
+        <a href="how-schengen-rule-works.html"><b>How it works</b></a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <h1 style="margin-top:18px;">How the Schengen 90/180 Rule Works</h1>
+    <p style="color:#555;margin-top:6px;">
+      The short version: you can stay in the Schengen Area for <b>up to 90 days</b> in any <b>rolling 180‑day period</b>.
+      “Rolling” means the 180‑day window moves forward one day at a time.
+    </p>
+
+    <h2>1) What “rolling 180 days” means</h2>
+    <p style="color:#555;">
+      Pick a date (usually today). Look back 180 days from that date (including today). Add up every day you were in Schengen
+      inside that window. If the total is <b>90 or less</b>, you're within the rule.
+    </p>
+
+    <h2>2) Counting days</h2>
+    <ul>
+      <li><b>Entry day counts</b></li>
+      <li><b>Exit day counts</b></li>
+      <li>Multiple trips add together</li>
+      <li>Overlapping date ranges should be counted once (DayWindow merges overlaps)</li>
+    </ul>
+
+    <h2>3) A quick example</h2>
+    <p style="color:#555;">
+      If your trips within the last 180 days total 65 days, then you have <b>25 days remaining</b> (90 − 65 = 25).
+    </p>
+
+    <h2>4) How DayWindow calculates</h2>
+    <ol>
+      <li>DayWindow takes your trip periods (entry/exit).</li>
+      <li>It merges overlapping periods to avoid double‑counting.</li>
+      <li>It sums the days that fall inside the last 180 days (entry and exit included).</li>
+      <li>It shows Used, Remaining, and whether you are over 90.</li>
+      <li>If you are over 90, it finds the first future date when the rolling 180‑day total becomes 90 or less (“Next Entry”).</li>
+    </ol>
+
+    <h2>Important note</h2>
+    <p style="color:#555;">
+      This tool is for guidance. Rules can be applied differently depending on your situation and border officer discretion.
+      If you are unsure, confirm with official sources or a qualified professional.
+    </p>
+
+    <hr style="margin:28px 0;border:none;border-top:1px solid #e6eaf2;" />
+    <p style="color:#666;font-size:14px;">
+      Go back to the <a href="index.html">calculator</a> • Read the <a href="faq.html">FAQ</a>
+    </p>
+  </div>
+</body>
+</html>
